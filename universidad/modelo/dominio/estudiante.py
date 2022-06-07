@@ -12,3 +12,6 @@ class Estudiante(Persona):
     @fecha_nacimiento.setter
     def fecha_nacimiento(self, nuevo_valor):
         self.__fecha_nacimiento = nuevo_valor
+
+    def __str__(self):
+        return self.cedula + ' : ' + self.nombre + ' - ' + self.apellido

@@ -1,9 +1,13 @@
 from modelo.dominio.docente import Docente
 from modelo.bd.gestionar_docente import Gestionar_Docente
+from modelo.dominio.estudiante import Estudiante
+from modelo.bd.gestionar_estudiante import Gestionar_Estudiante
+
 
 class Menu_Principal():
     def __init__(self) -> None:
         self.ref_gestionar_docente = Gestionar_Docente()
+        self.ref_gestionar_estudiante = Gestionar_Estudiante()
         self.opciones = ['Estudiante', 'Docente']
 
     def menu_principal(self):
